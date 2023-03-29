@@ -1,0 +1,44 @@
+%SIGNAL
+PIN   2 =  A 
+PIN   3 =  B 
+PIN   4 =  C 
+PIN   5 =  D 
+PIN  19 =  Fa 
+PIN  18 =  Fb 
+PIN  17 =  Fc 
+PIN  16 =  Fd 
+PIN  15 =  Fe 
+PIN  14 =  Ff 
+PIN  13 =  Fg 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+Fa =>
+    !A & !B & C
+
+Fb =>
+    !A & !B
+
+Fc =>
+    !A & !B & !C
+  # !A & !B & D
+
+Fd =>
+    !A & !B & C
+  # !A & !B & D
+
+Fe =>
+    !A & !B & C
+  # !A & !B & D
+
+Ff =>
+    !A & !B & C & !D
+
+Fg =>
+    !A & !B & C
+  # !A & !B & D
+
+%END
