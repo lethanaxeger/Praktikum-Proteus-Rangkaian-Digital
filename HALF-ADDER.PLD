@@ -1,0 +1,23 @@
+Name     Half-Adder ;
+PartNo   00 ;
+Date     05/05/2023 ;
+Revision 01 ;
+Designer Engineer ;
+Company  polinema ;
+Assembly None ;
+Location  ;
+Device   G16V8 ;
+
+/* *************** INPUT PINS *********************/
+PIN  2   = A                        ; /*                                 */ 
+PIN  3   = B                        ; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN  19  = S                        ; /*                                 */ 
+PIN  18  = CY                        ; /*                                 */ 
+
+/* *************** Half Adder *********************/
+S = (A & !B) # (!A & B);
+CY = A & B;
+
+

@@ -1,0 +1,19 @@
+%SIGNAL
+PIN   2 =  A 
+PIN   3 =  B 
+PIN  18 =  CY 
+PIN  19 =  S 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+CY =>
+    A & B
+
+S =>
+    A & !B
+  # !A & B
+
+%END
